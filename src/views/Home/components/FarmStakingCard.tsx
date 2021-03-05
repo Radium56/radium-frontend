@@ -1,16 +1,22 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import { Heading, Card, CardBody, Button } from '@pancakeswap-libs/uikit'
-import { useWeb3React } from '@web3-react/core'
+import { useWallet } from '@binance-chain/bsc-use-wallet'
+import BigNumber from 'bignumber.js'
 import useI18n from 'hooks/useI18n'
 import { useAllHarvest } from 'hooks/useHarvest'
 import useFarmsWithBalance from 'hooks/useFarmsWithBalance'
 import UnlockButton from 'components/UnlockButton'
 import CakeHarvestBalance from './CakeHarvestBalance'
 import CakeWalletBalance from './CakeWalletBalance'
+import { usePriceCakeBusd } from '../../../state/hooks'
+import useTokenBalance from '../../../hooks/useTokenBalance'
+import { getCakeAddress } from '../../../utils/addressHelpers'
+import useAllEarnings from '../../../hooks/useAllEarnings'
+import { getBalanceNumber } from '../../../utils/formatBalance'
 
 const StyledFarmStakingCard = styled(Card)`
-  background-image: url('/images/cake-bg.svg');
+  background-image: url('/images/RDF8/2a.png');
   background-repeat: no-repeat;
   background-position: top right;
   min-height: 376px;
@@ -35,9 +41,15 @@ const Actions = styled.div`
 
 const FarmedStakingCard = () => {
   const [pendingTx, setPendingTx] = useState(false)
-  const { account } = useWeb3React()
+  const { account } = useWallet()
   const TranslateString = useI18n()
   const farmsWithBalance = useFarmsWithBalance()
+  const cakeBalance = getBalanceNumber(useTokenBalance(getCakeAddress()))
+  const RDF8Price = usePriceCakeBusd().toNumber()
+  const allEarnings = useAllEarnings()
+  const earningsSum = allEarnings.reduce((accum, earning) => {
+    return accum + new BigNumber(earning).div(new BigNumber(10).pow(18)).toNumber()
+  }, 0)
   const balancesWithValue = farmsWithBalance.filter((balanceType) => balanceType.balance.toNumber() > 0)
 
   const { onReward } = useAllHarvest(balancesWithValue.map((farmWithBalance) => farmWithBalance.pid))
@@ -59,14 +71,16 @@ const FarmedStakingCard = () => {
         <Heading size="xl" mb="24px">
           {TranslateString(542, 'Farms & Staking')}
         </Heading>
-        <CardImage src="/images/cake.svg" alt="cake logo" width={64} height={64} />
+        <CardImage src="/images/RDF8/2.png" alt="cake logo" width={64} height={64} />
         <Block>
-          <Label>{TranslateString(544, 'CAKE to Harvest')}:</Label>
-          <CakeHarvestBalance />
+          <Label>{TranslateString(544, 'RDF8 to Harvest')}</Label>
+          <CakeHarvestBalance earningsSum={earningsSum}/>
+          <Label>~${(RDF8Price * earningsSum).toFixed(2)}</Label>
         </Block>
         <Block>
-          <Label>{TranslateString(546, 'CAKE in Wallet')}:</Label>
-          <CakeWalletBalance />
+          <Label>{TranslateString(546, 'RDF8 in Wallet')}</Label>
+          <CakeWalletBalance cakeBalance={cakeBalance} />
+          <Label>~${(RDF8Price * cakeBalance).toFixed(2)}</Label>
         </Block>
         <Actions>
           {account ? (
@@ -77,8 +91,8 @@ const FarmedStakingCard = () => {
               fullWidth
             >
               {pendingTx
-                ? TranslateString(548, 'Collecting CAKE')
-                : TranslateString(532, `Harvest all (${balancesWithValue.length})`)}
+                ? TranslateString(548, 'Collecting RDF8')
+                : TranslateString(999, `Harvest all (${balancesWithValue.length})`)}
             </Button>
           ) : (
             <UnlockButton fullWidth />
