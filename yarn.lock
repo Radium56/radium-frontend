@@ -1828,9 +1828,10 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
 
-"@pancakeswap-libs/uikit@goosedefi/goose-uikit":
-  version "0.10.2"
-  resolved "https://codeload.github.com/goosedefi/goose-uikit/tar.gz/068e017bb0f927c566a43596fb555a5818e13154"
+"@radiumfi-libs/uikit@0.10.3":
+  version "0.10.3"
+  resolved " https://registry.npmjs.org/@radiumfi-libs/uikit/-/uikit-0.10.3.tgz/1ad332a51347477667707b0d20b5f1bb09819abd"
+  integrity sha512-/A3szzoGvXNz3LXu0v2iJC3L/LQo5Q8QHPcAA9JY3HMm5rglBH6zeyVbkvUMoCeBkpCzTDpCBLHq5AhbUfFa7Q==
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
