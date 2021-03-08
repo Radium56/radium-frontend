@@ -1830,7 +1830,7 @@
 
 "@radiumfi-libs/uikit@0.10.3":
   version "0.10.3"
-  resolved " https://registry.npmjs.org/@radiumfi-libs/uikit/-/uikit-0.10.3.tgz/1ad332a51347477667707b0d20b5f1bb09819abd"
+  resolved " https://registry.npmjs.org/@radiumfi-libs/uikit/-/uikit-0.10.3.tgz#1ad332a51347477667707b0d20b5f1bb09819abd"
   integrity sha512-/A3szzoGvXNz3LXu0v2iJC3L/LQo5Q8QHPcAA9JY3HMm5rglBH6zeyVbkvUMoCeBkpCzTDpCBLHq5AhbUfFa7Q==
   dependencies:
     "@types/lodash" "^4.14.162"
