@@ -6,19 +6,24 @@ const config: MenuEntry[] = [
     icon: 'HomeIcon',
     href: '/',
   },
+ // {
+  //  label: 'Trade',
+  //  icon: 'TradeIcon',
+  //  items: [
+  //    {
+  //      label: 'Exchange',
+   //     href: '#',
+   //   },
+   //   {
+   //     label: 'Liquidity',
+    //    href: '#',
+   //   },
+   // ],
+ // },
   {
-    label: 'Trade',
+    label: 'Buy Now',
     icon: 'TradeIcon',
-    items: [
-      {
-        label: 'Exchange',
-        href: '#',
-      },
-      {
-        label: 'Liquidity',
-        href: '#',
-      },
-    ],
+    href: 'https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x9813589661197bd9d060d924de3e688a0a50c50e',
   },
   {
     label: 'Farms',
