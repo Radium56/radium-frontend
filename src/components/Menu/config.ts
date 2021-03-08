@@ -66,7 +66,7 @@ const config: MenuEntry[] = [
    //     href: 'https://app.astrotools.io/pancake-pair-explorer/',
   //    },
   //  ],
-  },
+ // },
   {
     label: 'More',
     icon: 'MoreIcon',
