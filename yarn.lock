@@ -1829,9 +1829,9 @@
     eslint-plugin-react-hooks "^4.0.0"
 
 "@radiumfi-libs/uikit@^0.10.3":
-  version "0.10.6"
-  resolved " https://registry.npmjs.org/@radiumfi-libs/uikit/-/uikit-0.10.6.tgz#71b2f94807695304b35e05db7d0531fa1eb553c1"
-  integrity sha512-beDm0XMzHbH29n75DaH5wwUouT+zgrnrR3aD1COnfuYQZcKhAdRSQ+CJtXzfGGQiDa9LDuC7LqDBAR/H5wDHXA==
+  version "0.10.7"
+  resolved " https://registry.npmjs.org/@radiumfi-libs/uikit/-/uikit-0.10.7.tgz#e7cf5b42d35901114b6d41d9608e3e9e12c2e319"
+  integrity sha512-CVEDerj5+IAIMBOa9ROqp30YwG0Rx/+tayRvWSRrO5MM4EclMuuEgWaPLFpfPX/Kew3nOBqHVzmK0w3D+/tr9g==
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
