@@ -31,7 +31,7 @@ const config: MenuEntry[] = [
     href: '/farms',
   },
   {
-    label: 'Stake',
+    label: 'Stakes',
     icon: 'PoolIcon',
     href: '/stakes',
   },
