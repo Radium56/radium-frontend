@@ -72,6 +72,24 @@ const config: MenuEntry[] = [
   //    },
   //  ],
  // },
+ {
+    label: 'Info',
+    icon: 'InfoIcon',
+    items: [
+      {
+        label: 'RDF8 Contract',
+        href: 'https://bscscan.com/address/0x9813589661197bd9d060d924de3e688a0a50c50e',
+      },
+      {
+        label: 'Masterchef',
+        href: 'https://bscscan.com/address/0x2f3b531e912814af835b42fd36ef41aa4b19823f',
+      },
+      {
+        label: 'Timelock',
+        href: 'https://bscscan.com/address/0x7e98c8445daf38f9ba56c80b48b64c73292fa194',
+      },
+    ],
+  },
   {
     label: 'More',
     icon: 'MoreIcon',
@@ -81,8 +99,8 @@ const config: MenuEntry[] = [
         href: 'https://github.com/radiumfi/',
       },
       {
-        label: 'Docs',
-        href: '#',
+        label: 'Medium',
+        href: 'https://radiumfinance.medium.com',
       },
       {
         label: 'Blog',
