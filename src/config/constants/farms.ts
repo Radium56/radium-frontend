@@ -99,24 +99,24 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 12,
-    risk: 5,
+    pid: 21,
+    risk: 1,
     isTokenOnly: true,
     lpSymbol: 'RDF8',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // RDF8-BUSD LP
+      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // RDF8-BUSD LP (BUSD-BUSD will ignore)
     },
     tokenSymbol: 'RDF8',
     tokenAddresses: {
       97: '',
-      56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
+      56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 13,
+    pid: 22,
     risk: 1,
     isTokenOnly: true,
     lpSymbol: 'BUSD',
@@ -133,7 +133,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 14,
+    pid: 23,
     risk: 3,
     isTokenOnly: true,
     lpSymbol: 'WBNB',
@@ -150,7 +150,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 15,
+    pid: 24,
     risk: 1,
     isTokenOnly: true,
     lpSymbol: 'USDT',
@@ -167,7 +167,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 21,
+    pid: 25,
     risk: 4,
     isTokenOnly: true,
     lpSymbol: 'CAKE',
@@ -184,7 +184,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 22,
+    pid: 26,
     risk: 3,
     isTokenOnly: true,
     lpSymbol: 'BSCX',
@@ -201,7 +201,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 23,
+    pid: 27,
     risk: 3,
     isTokenOnly: true,
     lpSymbol: 'AUTO',
