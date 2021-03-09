@@ -217,6 +217,23 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
+  {
+    pid: 28,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'RDF8',
+    lpAddresses: {
+      97: '',
+      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // RDF8-BUSD LP (BUSD-BUSD will ignore)
+    },
+    tokenSymbol: 'RDF8',
+    tokenAddresses: {
+      97: '',
+      56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
 ]
 
 export default farms
