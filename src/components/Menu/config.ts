@@ -82,11 +82,11 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Masterchef',
-        href: 'https://bscscan.com/address/0x2f3b531e912814af835b42fd36ef41aa4b19823f',
+        href: 'https://bscscan.com/address/0xb69afaeb6c39bf968c3e4cc84beaa6850143460f',
       },
       {
         label: 'Timelock',
-        href: 'https://bscscan.com/address/0x7e98c8445daf38f9ba56c80b48b64c73292fa194',
+        href: 'https://bscscan.com/address/0x21432f2ae8d4e07171ee80a4ffd199bd81c1b148',
       },
     ],
   },
