@@ -8,12 +8,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'RDF8-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+      56: '0x23eb5f30aab076972d916cc5d3c33c2eb897772a',
     },
     tokenSymbol: 'RDF8',
     tokenAddresses: {
       97: '',
-      56: '0x9813589661197bd9d060d924de3e688a0a50c50e',
+      56: '0x30c19bb8738ab475749adb09f480e6cf9724bfb1',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -24,12 +24,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'RDF8-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x9813589661197bd9d060d924de3e688a0a50c50e',
+      56: '0x4e87f3b1cf29d4356404f24753592df77bedeffb',
     },
     tokenSymbol: 'RDF8',
     tokenAddresses: {
       97: '',
-      56: '0x9813589661197bd9d060d924de3e688a0a50c50e',
+      56: '0x30c19bb8738ab475749adb09f480e6cf9724bfb1',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -45,7 +45,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'BNB',
     tokenAddresses: {
       97: '',
-      56: '0x9813589661197bd9d060d924de3e688a0a50c50e',
+      56: '0x30c19bb8738ab475749adb09f480e6cf9724bfb1',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -61,7 +61,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'USDT',
     tokenAddresses: {
       97: '',
-      56: '0x9813589661197bd9d060d924de3e688a0a50c50e',
+      56: '0x30c19bb8738ab475749adb09f480e6cf9724bfb1',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -77,7 +77,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'CAKE',
     tokenAddresses: {
       97: '',
-      56: '0x9813589661197bd9d060d924de3e688a0a50c50e',
+      56: '0x30c19bb8738ab475749adb09f480e6cf9724bfb1',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -93,7 +93,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'CAKE',
     tokenAddresses: {
       97: '',
-      56: '0x9813589661197bd9d060d924de3e688a0a50c50e',
+      56: '0x30c19bb8738ab475749adb09f480e6cf9724bfb1',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -105,12 +105,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'RADIUMFINANCE',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // RDF8-BUSD LP (BUSD-BUSD will ignore)
+      56: '0x23eb5f30aab076972d916cc5d3c33c2eb897772a', // RDF8-BUSD LP (BUSD-BUSD will ignore)
     },
     tokenSymbol: 'RADIUMFINANCE',
     tokenAddresses: {
       97: '',
-      56: '0x9813589661197bd9d060d924de3e688a0a50c50e',
+      56: '0x30c19bb8738ab475749adb09f480e6cf9724bfb1',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -122,7 +122,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BUSD',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // RDF8-BUSD LP (BUSD-BUSD will ignore)
+      56: '0x23eb5f30aab076972d916cc5d3c33c2eb897772a', // RDF8-BUSD LP (BUSD-BUSD will ignore)
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {
